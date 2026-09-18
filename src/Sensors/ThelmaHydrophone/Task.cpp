@@ -692,6 +692,14 @@ namespace Sensors
           trans_protocol = IMC::TBRFishTag::TBR_HS256;
         else if(parts[3] == "DS256")
           trans_protocol = IMC::TBRFishTag::TBR_DS256;
+        else if(parts[3] == "OPs"){
+          trans_protocol = IMC::TBRFishTag::TBR_OPs;
+          if (readIntFromString(parts[5], trans_data))
+          {
+            // Tag raw data
+            spew(DTR("Tag raw data: %u"), trans_data);
+          }
+        }
         spew(DTR("Transmit protocol: %s, enum: %i"), parts[3].c_str(), trans_protocol);
 
 
