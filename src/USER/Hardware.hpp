@@ -37,7 +37,6 @@ namespace DUNE
   { }
 }
 
-#include <USER/Hardware/SocketCAN.hpp>
 #include <USER/Hardware/GPIOD.hpp>
 
 #endif
