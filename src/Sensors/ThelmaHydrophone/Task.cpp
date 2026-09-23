@@ -33,11 +33,9 @@
 
 // ISO C++ 98 headers.
 #include <cstring>
-#include <algorithm>
 #include <cstddef>
 #include <ctime> /* time_t, struct tm, time, mktime */
 #include <string>
-#include <sstream>
 #include <inttypes.h>
 #include <chrono>
 
